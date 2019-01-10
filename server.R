@@ -8,7 +8,6 @@ library(data.table)
 library(dplyr)
 library(DT)
 ## import data
-#dataimported <- read.csv(file = "E:/Effect_size_analysis_heritability_27th_Nov_2018_recalc.csv", header = TRUE)
 dataimported = read.csv(url("http://individual.utoronto.ca/D_Ashbrook/Effect_size_analysis_heritability_28th_Nov_2018_recalc.csv"), header = TRUE)
 abc <- dataimported
 # Define server logic required to plot various variables against mpg
