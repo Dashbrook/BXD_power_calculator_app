@@ -15,7 +15,7 @@ abc <- dataimported
 shinyUI(fluidPage(tags$style(type = "text/css", ".irs-grid-pol.small {height: 0px;}"),
                   fluidRow(
                     column(12, offset = 0.2,
-                           h1("Power Calculator for BXD Family"),h2("Probability (beta) of detecting a QTL as a function of heritability, strains, and replicates within strain", offset = 3),tags$div(class="header", checked=NA, tags$a(href="https://davidashbrook.wordpress.com/bxd-power-app-help-page/", "     (Help Page)")),h3("     Beta 0.7; 10th January 2019"),h4("     David Ashbrook and colleagues")),
+                           h1("Power Calculator for a two parent recombinant inbred family"),h2("Probability (beta) of detecting a QTL as a function of heritability, strains, and replicates within strain", offset = 3),tags$div(class="header", checked=NA, tags$a(href="https://davidashbrook.wordpress.com/bxd-power-app-help-page/", "     (Help Page)")),h3("     Beta 0.7; 10th January 2019"),h4("     David Ashbrook and colleagues")),
                     column(6,
                            tags$a(href="https://davidashbrook.wordpress.com/bxd-power-app-help-page#Heritability", "Heritability"),
                            sliderInput("b", label = NULL, 
