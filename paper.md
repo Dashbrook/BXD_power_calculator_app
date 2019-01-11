@@ -42,7 +42,7 @@ of 0.4 and heritability of 0.4 is shown, for between 10 and 150 strains, and bet
 
 -![Figure 2](Figure_2.JPG) 
 
-**Figure 2: Table generated using the app.** The number of strains and biologicala replicates needed to achieve a power of greater than 0.8 is shown, and the table is sorted by the total number of animals. This provides the user with a quick way to identify the most efficient experimental design (i.e. minimizing the number of animals used). These may not always be practical as many RI populations will have fewer than 150 available strains. The values used to produce this figure are the same as Figure 1. 
+**Figure 2: Table generated using the app.** The number of strains and biological replicates needed to achieve a power of greater than 0.8 is shown, and the table is sorted by the total number of animals. This provides the user with a quick way to identify the most efficient experimental design (i.e. minimizing the number of animals used). These may not always be practical as many RI populations will have fewer than 150 available strains. The values used to produce this figure are the same as Figure 1. 
 
 
 We also provide a graphic of the standard error density around the mean trait value for the two homzygotes 
