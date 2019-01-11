@@ -36,20 +36,20 @@ strains, given an input heritability, effect size, and range of biological repli
 allowing the user to determine e.g. the minimum number of animals needed to achieve a certain power to detect
 a QTL (Figure 2).
 
--![Figure 1](Figure_1.png) Figure 1: Figure generated using the app. The power to detect a loci with a locus effect size
+-![Figure 1](Figure_1.png) **Figure 1: Figure generated using the app.** The power to detect a loci with a locus effect size
 of 0.4 and heritability of 0.4 is shown, for between 10 and 150 strains, and between 2 and 10 biological replicates. A power cut-off of 0.8 is shown (i.e. under these conditions, a real locus will be detected 80% of the time). The power cut-off can also be selected by the user. 
 
 
 -![Figure 2](Figure_2.JPG) 
 
-Figure 2: Table generated using the app. The number of strains and biologicala replicates needed to achieve a power of greater than 0.8 is shown, and the table is sorted by the total number of animals. This provides the user with a quick way to identify the most efficient experimental design (i.e. minimizing the number of animals used). These may not always be practical as many RI populations will have fewer than 150 available strains. The values used to produce this figure are the same as Figure 1. 
+**Figure 2: Table generated using the app.** The number of strains and biologicala replicates needed to achieve a power of greater than 0.8 is shown, and the table is sorted by the total number of animals. This provides the user with a quick way to identify the most efficient experimental design (i.e. minimizing the number of animals used). These may not always be practical as many RI populations will have fewer than 150 available strains. The values used to produce this figure are the same as Figure 1. 
 
 
 We also provide a graphic of the standard error density around the mean trait value for the two homzygotes 
 at a locus of interest. This gives a visual representation of what the overall distribution of trait values
 is expected to look like, given the locus effect size and the number of biological replicates (Figure 3). 
 
--![Figure 3](Figure_3.png) Figure 3: Figure generated using the app. This demonstrates that although there are two distint populations (i.e. two homozygotes at a locus), the total distribution within the population will appear continuous. Values used to calculate this are a locus effect size of 0.4, and 10 biological replicates. 
+-![Figure 3](Figure_3.png) **Figure 3: Figure generated using the app.** This demonstrates that although there are two distint populations (i.e. two homozygotes at a locus), the total distribution within the population will appear continuous. Values used to calculate this are a locus effect size of 0.4, and 10 biological replicates. 
 
 
 This app will be useful at several stages. Firstly, when designing an experiment using a two parent RI population, such as the BXD, the user will be able to determine how many animals should be used, and provide a simple figure which can
