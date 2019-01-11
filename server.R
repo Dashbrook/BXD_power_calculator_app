@@ -44,7 +44,7 @@ shinyServer(function(input, output) {
     Significant_lines_table
   })
   output$tbl2 <- DT::renderDataTable({
-    DT::datatable(Significant_lines_table(),options = list(pageLength = 10), colnames = c('Power', 'Number of lines', 'Number of biological replicates', 'Total animals needed'))%>%
+    DT::datatable(Significant_lines_table(),options = list(pageLength = 10), colnames = c('Power', 'Number of strains', 'Number of biological replicates', 'Total animals needed'))%>%
       formatRound(columns=c('Power'), digits=2)
   })
   output$effectplot <- renderPlot({
