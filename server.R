@@ -28,7 +28,7 @@ shinyServer(function(input, output) {
       theme(legend.position="top", axis.text=element_text(size=14),
             axis.title=element_text(size=18,face="bold")) + 
       guides(colour = guide_legend(override.aes = list(size=3))) +
-      xlab("Number of BXD lines") + 
+      xlab("Number of RI strains") + 
       ylab("Power") + 
       labs(color = "Number of biological replicates\n")
     print(ahhhh)

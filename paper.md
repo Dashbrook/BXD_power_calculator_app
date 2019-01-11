@@ -1,5 +1,5 @@
 ---
-title: 'Simple graphical interface for calculating power to detect a QTL in a two parent recombinent inbred population, such as the BXD'
+title: 'Simple graphical interface for calculating power to detect a QTL in a two parent recombinent inbred population, such as the BXD family'
 tags:
   - R
   - Genetics
@@ -18,14 +18,14 @@ affiliations:
    index: 1
  - name: Humboldt University, Berlin, Germany
    index: 2
-date: 10 January 2019
+date: 11 January 2019
 bibliography: paper.bib
 ---
 
 # Summary
 
 Quantitative trait loci (QTL) studies are often carried out in two parent recombinant inbred (RI) populations
-such as the BXD mouse family [@Taylor1973;@Andreux2012c;@Williams2016;@Williams2017a;@Li2018]. Although calculations
+such as the BXD mouse family [@Taylor1973;@Andreux2012c;@Williams2016;@Williams2017a;@Li2018]. Although methods
 have been available for many years to calculate power to detect effects in these populations [e.g. @Belknap1996;@Belknap1998],
 there is not currently a quick, easy, way for bench scientists to visualise the power to detect a loci under different 
 experimental conditions. The power to detect a loci depends on several parameters including; the heritability 
@@ -36,9 +36,7 @@ experimenter. This app seeks to help an experimenter decide how many strains and
 necessary to have sufficient power to detect a QTL for a trait of interest.
 
 Our app queries a dataframe build using a highly cited and commonly used method to calculate QTL power, R/qtlDesign, 
-[https://cran.r-project.org/web/packages/qtlDesign/index.html; @Sen2007] the results of which are then presented to the user graphically. This allows the
-user to compare their power to detect a loci of a given size, given other common conditions. It is presented 
-through a ShinyApp web interface (https://dashbrook1.shinyapps.io/bxd_power_calculator_app/). We provide two
+[https://cran.r-project.org/web/packages/qtlDesign/index.html; @Sen2007] the results of which are then presented to the user graphically. This allows the user to compare their power to detect a loci of a given size, given other common conditions. It is presented through a ShinyApp web interface (https://dashbrook1.shinyapps.io/bxd_power_calculator_app/). We provide two
 outputs for this. The first is a figure showing the users power to detect a loci with different numbers of 
 strains, given an input heritability, effect size, and range of biological replicates (Figure 1). The second is a table,
 allowing the user to determine e.g. the minimum number of animals needed to achieve a certain power to detect
@@ -48,13 +46,17 @@ a QTL (Figure 2).
 of 0.4 and heritability of 0.4 is shown, for between 10 and 150 strains, and between 2 and 10 biological replicates. 
 
 
--![Figure 2](Figure_2.JPG)
+-![Figure 2](Figure_2.JPG) 
+
+Figure 2: Table generated using the app. The number of strains and biologicala replicates need to achieve a power of greater than 0.8 is shown, and the table is sorted by the total number of animals. This provides the user with a quick way to identify what the most efficient (i.e. minimum number of animals) experimental design. These may not always be practical as many RI populations will have fewer than 150 available strains. 
+
 
 We also provide a graphic of the standard error density around the mean trait value for the two homzygotes 
 at a locus of interest. This gives a visual representation of what the overall distribution of trait values
 is expected to look like, given the locus effect size and the number of biological replicates (Figure 3). 
 
--![Figure 3](Figure_3.png)
+-![Figure 3](Figure_3.png) Figure 3: Figure generated using the app. This demonstrates that although there are two distint populations (i.e. two homozygotes at a locus), the total distribution within the population will appear continuous. 
+
 
 This app will be useful at several stages. Firstly, when applying for grants to use RI strains, the
 user will be able to determine how many animals should be used, and provide a simple figure which can
