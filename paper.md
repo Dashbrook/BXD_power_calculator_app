@@ -63,6 +63,6 @@ used in several current projects which will result in publications.
 
 # Acknowledgements
 
-We acknowledge contributions from Robert W. Williams and Śaunak Sen in discussing the design of the application.
+We acknowledge contributions from Danny Arends, Robert W. Williams and Śaunak Sen in discussing the design of the application.
 
 # References
