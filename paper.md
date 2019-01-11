@@ -28,11 +28,10 @@ of the trait, the locus effect size, the number of  strain being used, and the n
 replicates. The first two of these (heritability and locus effect size) are features of the trait, which have to
 be estimated beforehand, whereas number of strains and number of biological replicates are decided by the 
 experimenter. This app seeks to help an experimenter decide how many strains and biological replicates are 
-necessary to have sufficient power to detect a QTL for a trait of interest.
+necessary to have sufficient power to detect a QTL for a trait of interest. The app is presented through a ShinyApp web interface (https://dashbrook1.shinyapps.io/bxd_power_calculator_app/), with all code is available on GitHub (https://github.com/Dashbrook/BXD_power_calculator_app). 
 
 Our app queries a dataframe build using a highly cited and commonly used method to calculate QTL power, R/qtlDesign, 
-[https://cran.r-project.org/web/packages/qtlDesign/index.html; @Sen2007] the results of which are then presented to the user graphically. This allows the user to compare their power to detect a loci of a given size, given other common conditions. It is presented through a ShinyApp web interface (https://dashbrook1.shinyapps.io/bxd_power_calculator_app/). We provide two
-outputs for this. The first is a figure showing the users power to detect a loci with different numbers of 
+[https://cran.r-project.org/web/packages/qtlDesign/index.html; @Sen2007] the results of which are then presented to the user graphically. This allows the user to compare their power to detect a loci of a given size, given other common conditions. We provide two outputs for this. The first is a figure showing the users power to detect a loci with different numbers of 
 strains, given an input heritability, effect size, and range of biological replicates (Figure 1). The second is a table,
 allowing the user to determine e.g. the minimum number of animals needed to achieve a certain power to detect
 a QTL (Figure 2).
