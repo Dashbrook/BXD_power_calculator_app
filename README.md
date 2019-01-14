@@ -28,4 +28,4 @@ The source code is released under the GNU GENERAL PUBLIC LICENSE Version 3 (GPLv
 
 ### Contact
 
-Code managed by 
+Code managed by David Ashbrook - Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, USA 
