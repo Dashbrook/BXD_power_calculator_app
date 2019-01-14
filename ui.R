@@ -1,16 +1,6 @@
 #written by David Ashbrook 21st November 2018
 #
 library(shiny)
-library(datasets)
-library(ggplot2)# load ggplot
-library(RColorBrewer)
-library(data.table)
-library(dplyr)
-library(DT)
-
-dataimported = read.csv(url("http://individual.utoronto.ca/D_Ashbrook/Effect_size_analysis_heritability_28th_Nov_2018_recalc.csv"), header = TRUE)
-abc <- dataimported
-
 
 shinyUI(fluidPage(tags$style(type = "text/css", ".irs-grid-pol.small {height: 0px;}"),
                   fluidRow(
