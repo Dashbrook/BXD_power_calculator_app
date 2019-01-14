@@ -9,10 +9,15 @@ tags:
 authors:
   - name: David G. Ashbrook
     orcid: 0000-0002-7397-8910
-    affiliation: "1" # (Multiple affiliations must be quoted)
+    affiliation: 1
+  - name: Danny Arends
+    orcid: 0000-0001-8738-0162
+    affiliation: 2
 affiliations:
- - name: Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, USA
-   index: 1
+  - name: Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, USA
+    index: 1
+  - name: Albrecht Daniel Thaer Institut für Agrar und Gartenbauwissenschaften, Humboldt Universität zu Berlin, D10115 Berlin, Germany
+    index: 2
 date: 11 January 2019
 bibliography: paper.bib
 ---
