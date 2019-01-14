@@ -1,4 +1,4 @@
-## Correlated Trait Locus (CTL) mapping
+## BXD Power calculator
 
 #### Algorithm
 
