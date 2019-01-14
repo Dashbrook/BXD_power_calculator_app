@@ -7,20 +7,21 @@ library(RColorBrewer)
 library(data.table)
 library(dplyr)
 library(DT)
+
 ## import data
 dataimported = read.csv(url("http://individual.utoronto.ca/D_Ashbrook/Effect_size_analysis_heritability_28th_Nov_2018_recalc.csv"), header = TRUE)
-abc <- dataimported
+
 # Define server logic required to plot various variables against mpg
 shinyServer(function(input, output) {
-  Significant_lines_table <- reactive({(subset(abc,effect.size.locus==input$a&Heritability==input$b&Power>=input$c&NumberOfReplicates>=input$slider2[1]&NumberOfReplicates<=input$slider2[2])[,c(1,3,4,7)])%>% 
+  Significant_lines_table <- reactive({(subset(dataimported,effect.size.locus==input$a&Heritability==input$b&Power>=input$c&NumberOfReplicates>=input$slider2[1]&NumberOfReplicates<=input$slider2[2])[,c(1,3,4,7)])%>% 
       group_by(numberoflines) %>% 
       slice(which.min(NumberOfReplicates))
   })
   
   output$powerplot <- renderPlot({
     
-    ahhhh <- ggplot(data=abc, aes(x=numberoflines, y=Power, group=factor(NumberOfReplicates), colour=factor(NumberOfReplicates))) + 
-      geom_line(data=subset(abc,effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates>=input$slider2[1]&NumberOfReplicates<=input$slider2[2])) +
+    ahhhh <- ggplot(data=dataimported, aes(x=numberoflines, y=Power, group=factor(NumberOfReplicates), colour=factor(NumberOfReplicates))) + 
+      geom_line(data=subset(dataimported,effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates>=input$slider2[1]&NumberOfReplicates<=input$slider2[2])) +
       geom_hline(yintercept = input$c) +
       #      geom_point(data=subset(dataimported,NumberOfReplicates==input$a&Heritability==input$b&Power<=0.95))+ 
       scale_y_continuous(breaks=seq(0,1,0.05), limits = c(0, 1), expand=c(0,0)) + 
@@ -68,6 +69,6 @@ shinyServer(function(input, output) {
   ## Need to get H2RIX for the selected H2, and selected number of strains
   ## prob need to do some subsetting, then output, rather than just output. 
   ## Should be able to use the significant lines table
-  output$selected_var_1 <- renderText({    paste("H2RI using minimum biological replicates value:", (signif((min(subset(abc,effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates==input$slider2[1])$H2RI)),3)))})
-  output$selected_var_2 <- renderText({    paste("H2RI using maximum biological replicates value:", (signif((min(subset(abc,effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates==input$slider2[2])$H2RI)),3)))})
+  output$selected_var_1 <- renderText({    paste("H2RI using minimum biological replicates value:", (signif((min(subset(dataimported, effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates==input$slider2[1])$H2RI)),3)))})
+  output$selected_var_2 <- renderText({    paste("H2RI using maximum biological replicates value:", (signif((min(subset(dataimported, effect.size.locus==input$a&Heritability==input$b&NumberOfReplicates==input$slider2[2])$H2RI)),3)))})
 })
