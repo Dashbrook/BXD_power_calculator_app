@@ -11,15 +11,19 @@ Installation simply requires [server.R](server.R), [ui.R](ui.R) and [run_app.R](
 
 ### Test
 
-To test that the app is working correctly, open the app and wait for plots to appear. Set heritability to 0.4, locus effect size to 0.4, biological replicates between 2 and 10, and power threshold to 0.8, observing that the plots update after each user input. The plots should now appear as shown below:
+To test that the app is working correctly, open the app and wait for plots to appear. Set heritability to 0.4, locus effect size to 0.4, biological replicates between 2 and 10, and power threshold to 0.8, observing that the plots update after each user input. The main plot should now appear as shown below:
 
 -![Figure 1](Figure_1.png) 
-
--![Figure 3](Figure_3.png) 
 
 Now go to the table below, and click on "Total animals needed" to sort by the minimum number of animals needed. The table should now look like this:
 
 -![Figure 2](Figure_2.JPG) 
+
+Now return to the inputs, and alter the minimum number of biological replicates to 10. The figure to the left should now appear like this:
+
+
+-![Figure 3](Figure_3.png) 
+
 
 
 ### Issues
