@@ -40,6 +40,8 @@ Or be a maintainer, and adopt a function
 
 ### Cite
 
+Citation will be added, after publication. 
+
 ### License
 
 The source code is released under the GNU GENERAL PUBLIC LICENSE Version 3 (GPLv3). See [LICENSE.txt](LICENSE.txt).
